@@ -228,8 +228,10 @@ span{
 
     border: 2px solid rgb(177, 161, 161);
     padding: 4px;
-    width:305px;
-    height: 120px;
+    /* width:305px; */
+    /* width: 90%; */
+    /* height: 135px; */
+    /* height: ; */
     box-shadow: 10px 10px 50px rgb(51, 50, 50);
     background-color: #797383;
 
@@ -241,10 +243,12 @@ span{
 }
 
 .mobile_Button {
-    width: 26px;
+    /* width: 8%; */
+    /* width: 28px; */
+    margin: 1px 1px;
     text-align: center;
     border: none;
-    padding: 1px;
+    padding: 1%;
     border-radius: 5px;
     margin-bottom: 3px;
 
@@ -252,26 +256,23 @@ span{
 
 }
 
-.midLine {
-    margin-left: 15px;
-}
+/* .midLine {
+    margin-left: ;
+} */
 
 .longWidth_button {
-    width: 40px;
+    /* width: 40px; */
+    width: 13%;
 }
 
 .mobileSpace_Button {
-    width: 150px;
+    /* width: 160px; */
+    width: 48%;
 }
 
 .up {
     color: blue;
     background-color: #a5a0a0;
-}
-
-.back_icon {
-    color: red;
-    /* background-color: black; */
 }
 
 /****** small keyboard end ******/
@@ -343,7 +344,8 @@ span{
 
 @media screen and (max-width: 765px) {
     .whole_page {
-        width: 330px;
+        /* width: 330px;  765 */
+        width: 100%;
         margin: 0px auto;
     }
 
@@ -352,7 +354,8 @@ span{
     }
 
     #text_area {
-        width: 270px;
+        /* width: 300px; */
+        width: 90%;
         height: 70px;
     }
 
@@ -362,6 +365,94 @@ span{
 
     .small_keyBoard {
         display: block;
+    }
+
+
+
+
+    .small_keyBoard {
+        /* display: flex; */
+    
+        border: 2px solid rgb(177, 161, 161);
+        padding: 4px;
+        /* width:305px; */
+        /* width: 100%; */
+        /* height: 135px; */
+        /* height: 20%; */
+        box-shadow: 10px 10px 50px rgb(51, 50, 50);
+        background-color: #797383;
+    
+        border-radius: 5px;
+    }
+    
+    .small_keyBoard button{
+        box-shadow: none;
+    }
+    
+    .mobile_Button {
+        width: 8%;
+        /* width: 28px; */
+        margin: 1px 1px;
+        text-align: center;
+        border: none;
+        padding: 1%;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    
+        background-color: #b4b1b1;
+    
+    }
+    
+    .midLine {
+        margin-left: 9%;
+    }
+    
+    .longWidth_button {
+        /* width: 40px; */
+        width: 13%;
+    }
+    
+    .mobileSpace_Button {
+        /* width: 160px; */
+        width: 48%;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    .whole_page {
+        width: 340px;
+        margin: 0px auto;
+    }
+
+    .textare_section {
+        margin: 20px 0;
+    }
+
+    #text_area {
+        width: 300px;
+        height: 70px;
+    }
+
+    #big_keyboard {
+        display: none;
+    }
+
+    .midLine {
+        margin-left: ;
+    }
+
+    .small_keyBoard {
+        display: block;
+    }
+    
+    .small_keyBoard button{
+        box-shadow: none;
+    }
+    
+    .mobileSpace_Button {
+        width: 48%;
     }
 
 }
