@@ -298,6 +298,12 @@ span{
 
 }
 
+.creator {
+    color:#8db62f;
+    text-align: center;
+    margin-top: 10%;
+}
+
 @media screen and (max-width: 925px) {
     .whole_page {
         width: 760px;
@@ -439,9 +445,9 @@ span{
         display: none;
     }
 
-    .midLine {
+    /* .midLine {
         margin-left: ;
-    }
+    } */
 
     .small_keyBoard {
         display: block;
