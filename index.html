@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <script src="./onclick.js"></script>
+</head>
+<body>
+    <div class="whole_page">
+        <section class="textare_section">
+            <textarea name="" id="text_area" cols="30" rows="8"></textarea>
+        </section>
+        <!-- big keyboard -->
+        <section id="big_keyboard" class="big_keyBoard">
+            <section class="character_section">
+                <div class="function_Key_intop">
+                    <button class="normal_Button BigKeyboard_button">Esc</button>
+                    <button id="f1" class="normal_Button BigKeyboard_button">F1</button>
+                    <button class="normal_Button BigKeyboard_button">F2</button>
+                    <button class="normal_Button BigKeyboard_button">F3</button>
+                    <button class="normal_Button BigKeyboard_button">F4</button>
+                    <button id="f5" class="normal_Button BigKeyboard_button">F5</button>
+                    <button class="normal_Button BigKeyboard_button">F6</button>
+                    <button class="normal_Button BigKeyboard_button">F7</button>
+                    <button class="normal_Button BigKeyboard_button">F8</button>
+                    <button id="f9" class="normal_Button BigKeyboard_button">F9</button>
+                    <button class="normal_Button BigKeyboard_button">F10</button>
+                    <button class="normal_Button BigKeyboard_button">F11</button>
+                    <button class="normal_Button BigKeyboard_button">F12</button>
+                </div>
+                <div>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('carat')">~<br>`</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('1')">!<br>1</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('2')">@<br>2</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('3')">#<br>3</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('4')">$<br>4</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('5')">%<br>5</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('6')">^<br>6</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('7')">&<br>7</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('8')">*<br>8</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('9')">(<br>9</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedNumber('0')">)<br>0</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('minus')">_<br>-</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('equal')">+<br>=</button>
+                    <button id="back" class="normal_Button BigKeyboard_button" onclick="clickdBack()">&larr;<br>&nbsp;</button>
+                </div>
+                <div>
+                    <button id="tab" class="normal_Button BigKeyboard_button" onclick="clicked('    ')">Tab&#8644;<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('q')">Q<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('w')">W<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('e')">E<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('r')">R<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('t')">T<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('y')">Y<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('u')">U<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('i')">I<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('o')">O<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('p')">P<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('[')">{<br>[</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon(']')">]<br>]</button>
+                    <button id="backClash" class="normal_Button BigKeyboard_button" onclick="clickedIcon('\\')">|<br>\</button>
+                </div>
+                <div>
+                    <button id="caps_lock" class="normal_Button BigKeyboard_button" onclick="clickedCaps()"><span class="">Caps<br>Lock</span></button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('a')">A<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('s')">S<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('d')">D<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('f')">F<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('g')">G<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('h')">H<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('j')">J<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('k')" >K<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('l')">L<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('colon')">:<br>;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('cort')">"<br>'</button>
+                    <button id="enter_charSec" class="normal_Button BigKeyboard_button" onclick="clickedEnter()"><span class="">Enter<br><stromg>&#8626</stromg></span></button>
+                </div>
+                <div>
+                    <button class="shift normal_Button BigKeyboard_button" onclick="clicked('a')"><strong>&#8679; </strong>Shift<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('z')">Z<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('x')">X<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('c')">C<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('v')">V<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('b')">B<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('n')">N<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('m')">M<br>&nbsp;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('coma')">&#8249;<br>,</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('dot')">&#8250;<br>.</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clickedIcon('clash')">?<br>/</button>
+                    <button class="shift normal_Button BigKeyboard_button" onclick="clicked()"><strong>&#8679; </strong>Shift<br>&nbsp;</button>
+                </div>
+                <div class="space_row">
+                    <div class="space_row">
+                        <div>
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Ctrl</button>
+                        </div>
+                        <div>
+                            <button id="fn_button" class="normal_Button BigKeyboard_button" onclick="clicked('')">fn</button>
+                        </div>
+                        <div>
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">
+                                <i class="fa fa-windows" style="font-size:20px;"></i>
+                            </button>
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Alt</button>
+                            <button id="space" class="normal_Button BigKeyboard_button" onclick="clicked(' ')">&nbsp;</button>
+                        </div>
+                    </div>
+                    
+                    <div id="bigKeyboard_spaceRight">
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Alt</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">
+                            <i class="fa fa-windows BigKeyboard_button" style="font-size:20px;"></i>
+                        </button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">
+                            <i class="fa fa-bars" style="font-size:20px;"></i>
+                        </button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Ctrl</button>
+                    </div>
+                    <div id="shortKeyboard_spaceRight">
+                        <div style="float: left;">
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Ctrl</button>
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">Alt</button>
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">&larr;</button>
+                        </div>
+                        <div style="float: left;">
+                            <button class="laptoparrow_Button BigKeyboard_button" onclick="clicked('')">&uarr;</button><br>
+                            <button class="laptoparrow_Button BigKeyboard_button" onclick="clicked('')">&darr;</button>
+                        </div>
+                        <div style="float: left;">
+                            <button class="normal_Button BigKeyboard_button" onclick="clicked('')">&rarr;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="arrow_section">
+                <div class="arrow_section_topLine">
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Print screen</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Scoll Lock</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Pause Break</button>
+
+                </div>
+                <div class="insert_line">
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Insert<br>&nbsp;</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Home<br>&nbsp;</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Page Up</button>
+                </div>
+                <div class="delete_line">
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Delete<br>&nbsp;</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">End<br>&nbsp;</button>
+                    <button class="normal_Button small_text BigKeyboard_button" onclick="clicked('')">Page Down</button>
+                </div>
+                <div>
+                    <button id="up_arrow" class="normal_Button" onclick="clicked('')">&uarr;</button>
+                </div>
+                <div>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('')">&larr;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('')">&darr;</button>
+                    <button class="normal_Button BigKeyboard_button" onclick="clicked('')">&rarr;</button>
+                </div>
+                <div></div>
+            </section>
+
+            
+            
+            <section class="number_section">
+                <section>
+                    <div class="number_section_topLine">
+                        <button class="normal_Button BigKeyboard_button" onclick="clickedNumberLock()"><span class="small_text">Num Lock</span></button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">/<br>&nbsp;</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">*<br>&nbsp;</button>
+                        
+                    </div>
+                    <div>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(7)">7<br><span class="small_text">Home</span></button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(8)">8<br>&uarr;</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(9)">9<br><span class="small_text">pgUp</span></button>
+        
+                    </div>
+                    <div>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(4)">4<br>&larr;</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(5)">5<br>&nbsp;</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(6)">6<br>&rarr;</button>
+                    </div>
+                    <div>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(1)">1<br><span class="small_text">End</span></button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(2)">2<br>&darr;</button>
+                        <button class="normal_Button BigKeyboard_button" onclick="number(3)">3<br><span class="small_text">pgDn</span></button>
+
+                    </div>
+                    <div>
+                        <button id="zero" class="normal_Button BigKeyboard_button" onclick="number(0)">0<br><span class="small_text">Ins</span></button>
+                        <button class="normal_Button BigKeyboard_button" onclick="clicked('')">.<br><span class="small_text">Del</span></button>
+                    </div>
+                </section> 
+                <section class="plassMinus_section">
+                    <button id="minus" class="normal_Button BigKeyboard_button" onclick="clicked('')">-<br>&nbsp;</button><br>
+                    <button id="plass" class="normal_Button BigKeyboard_button" onclick="clicked('')">+<br>&nbsp;</button><br>
+                    <button id="enter_numberSec" class="normal_Button BigKeyboard_button" onclick="clicked('')"><span class="small_text">Enter</span></button>
+                </section>
+            </section>
+        </section>
+        <!-- big keyboard -->
+
+
+        <!-- small keyboard -->
+        <section id="bigMobile" class="small_keyBoard">
+            <div>
+                <button class="mobile_Button" onclick="clicked('1')">1</button>
+                <button class="mobile_Button" onclick="clicked('2')">2</button>
+                <button class="mobile_Button" onclick="clicked('3')">3</button>
+                <button class="mobile_Button" onclick="clicked('4')">4</button>
+                <button class="mobile_Button" onclick="clicked('5')">5</button>
+                <button class="mobile_Button" onclick="clicked('6')">6</button>
+                <button class="mobile_Button" onclick="clicked('7')">7</button>
+                <button class="mobile_Button" onclick="clicked('8')">8</button>
+                <button class="mobile_Button" onclick="clicked('9')">9</button>
+                <button class="mobile_Button" onclick="clicked('0')">0</button>
+            </div>
+
+            <div>
+                <button class="mobile_Button" onclick="clicked('q')">Q</button>
+                <button class="mobile_Button" onclick="clicked('w')">W</button>
+                <button class="mobile_Button" onclick="clicked('e')">E</button>
+                <button class="mobile_Button" onclick="clicked('r')">R</button>
+                <button class="mobile_Button" onclick="clicked('t')">T</button>
+                <button class="mobile_Button" onclick="clicked('y')">Y</button>
+                <button class="mobile_Button" onclick="clicked('u')">U</button>
+                <button class="mobile_Button" onclick="clicked('i')">I</button>
+                <button class="mobile_Button" onclick="clicked('o')">O</button>
+                <button class="mobile_Button" onclick="clicked('p')">P</button>
+            </div>
+
+            <div class="midLine">
+                <button class="mobile_Button" onclick="clicked('a')">A</button>
+                <button class="mobile_Button" onclick="clicked('s')">S</button>
+                <button class="mobile_Button" onclick="clicked('d')">D</button>
+                <button class="mobile_Button" onclick="clicked('f')">F</button>
+                <button class="mobile_Button" onclick="clicked('g')">G</button>
+                <button class="mobile_Button" onclick="clicked('h')">H</button>
+                <button class="mobile_Button" onclick="clicked('j')">J</button>
+                <button class="mobile_Button" onclick="clicked('k')">K</button>
+                <button class="mobile_Button" onclick="clicked('l')">L</button>
+            </div>
+            <div>
+                <button class="mobile_Button longWidth_button up" onclick="clickedCaps()">&uArr;</button>
+                <button class="mobile_Button" onclick="clicked('z')">Z</button>
+                <button class="mobile_Button" onclick="clicked('x')">X</button>
+                <button class="mobile_Button" onclick="clicked('c')">C</button>
+                <button class="mobile_Button" onclick="clicked('v')">V</button>
+                <button class="mobile_Button" onclick="clicked('b')">B</button>
+                <button class="mobile_Button" onclick="clicked('n')">N</button>
+                <button class="mobile_Button" onclick="clicked('m')">M</button>
+                <button class="mobile_Button  longWidth_button" onclick="clickdBack()">
+                    &larr;
+                </button>
+            </div>
+            <div>
+                <button class="mobile_Button longWidth_button" onclick="clicked('')"><small>!#1</small></button>
+                <button class="mobile_Button" onclick="clicked(',')">,</button>
+                <button class="mobile_Button mobileSpace_Button" onclick="clicked('')"><small>English (UK)</small></button>
+                <button class="mobile_Button" onclick="clicked('.')">.</button>
+                <button class="mobile_Button longWidth_button" onclick="clicked('')">&#8626;</button>
+            </div>
+        </section>
+
+
+    </div>
+</body>
+</html>
