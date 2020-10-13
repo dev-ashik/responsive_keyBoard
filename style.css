@@ -1,23 +1,19 @@
 body {
     background-color: #7a7285;
-    /* padding: 0 3%; */
 }
 
 .whole_page {
-    /* width: 1110px; */
     width: 1132px;
     margin: 0px auto;
 }
 
 
-/* view_section start */
+/****** view_section start ******/
 .textare_section {
-    /* width: 1094px; */
     margin: 40px 0;
 }
 
 #text_area {
-    /* margin-top: 50px; */
     background-color: lightgray;
     width: 1060px;
     padding: 20px;
@@ -30,7 +26,7 @@ body {
     display: none;
 }
 
-/* view_section end */
+/****** view_section end ******/
 
 /****** common-sectin start ******/
 
@@ -142,7 +138,6 @@ span{
 }
 
 #shortKeyboard_spaceRight {
-    /* display: flex; */
     display: none;
 }
 
@@ -151,7 +146,6 @@ span{
     background-color: black;
     border: none;
     width: 40px;
-    /* height: 40px; */
     text-align: center;
 }
 
@@ -224,14 +218,9 @@ span{
 
 /****** small keyboard start ******/
 .small_keyBoard {
-    /* display: flex; */
 
     border: 2px solid rgb(177, 161, 161);
     padding: 4px;
-    /* width:305px; */
-    /* width: 90%; */
-    /* height: 135px; */
-    /* height: ; */
     box-shadow: 10px 10px 50px rgb(51, 50, 50);
     background-color: #797383;
 
@@ -243,8 +232,6 @@ span{
 }
 
 .mobile_Button {
-    /* width: 8%; */
-    /* width: 28px; */
     margin: 1px 1px;
     text-align: center;
     border: none;
@@ -256,17 +243,11 @@ span{
 
 }
 
-/* .midLine {
-    margin-left: ;
-} */
-
 .longWidth_button {
-    /* width: 40px; */
     width: 13%;
 }
 
 .mobileSpace_Button {
-    /* width: 160px; */
     width: 48%;
 }
 
@@ -342,15 +323,10 @@ span{
     #shortKeyboard_spaceRight {
         display: block;
     }
-
-    /* .small_keyBoard {
-        display: none;
-    } */
 }
 
 @media screen and (max-width: 765px) {
     .whole_page {
-        /* width: 330px;  765 */
         width: 100%;
         margin: 0px auto;
     }
@@ -360,7 +336,6 @@ span{
     }
 
     #text_area {
-        /* width: 300px; */
         width: 90%;
         height: 70px;
     }
@@ -377,14 +352,9 @@ span{
 
 
     .small_keyBoard {
-        /* display: flex; */
     
         border: 2px solid rgb(177, 161, 161);
         padding: 4px;
-        /* width:305px; */
-        /* width: 100%; */
-        /* height: 135px; */
-        /* height: 20%; */
         box-shadow: 10px 10px 50px rgb(51, 50, 50);
         background-color: #797383;
     
@@ -397,7 +367,6 @@ span{
     
     .mobile_Button {
         width: 8%;
-        /* width: 28px; */
         margin: 1px 1px;
         text-align: center;
         border: none;
@@ -414,12 +383,10 @@ span{
     }
     
     .longWidth_button {
-        /* width: 40px; */
         width: 13%;
     }
     
     .mobileSpace_Button {
-        /* width: 160px; */
         width: 48%;
     }
 
@@ -444,10 +411,6 @@ span{
     #big_keyboard {
         display: none;
     }
-
-    /* .midLine {
-        margin-left: ;
-    } */
 
     .small_keyBoard {
         display: block;
