@@ -325,7 +325,7 @@ span{
     }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 777px) {
     .whole_page {
         width: 100%;
         margin: 0px auto;
@@ -336,7 +336,7 @@ span{
     }
 
     #text_area {
-        width: 90%;
+        width: 94%;
         height: 70px;
     }
 
@@ -348,19 +348,172 @@ span{
         display: block;
     }
 
-
-
-
-    .small_keyBoard {
     
-        border: 2px solid rgb(177, 161, 161);
-        padding: 4px;
-        box-shadow: 10px 10px 50px rgb(51, 50, 50);
-        background-color: #797383;
-    
-        border-radius: 5px;
+    .small_keyBoard button{
+        box-shadow: none;
     }
     
+    .mobile_Button {
+        width: 9%;
+        margin: 1px 1px;
+        text-align: center;
+        border: none;
+        padding: 1%;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    
+        background-color: #b4b1b1;
+    
+    }
+    
+    .midLine {
+        margin-left: 9%;
+    }
+    
+    .longWidth_button {
+        width: 14%;
+    }
+    
+    .mobileSpace_Button {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width: 666px) {
+    .whole_page {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .textare_section {
+        margin: 20px 0;
+    }
+
+    #text_area {
+        width: 94%;
+        height: 70px;
+    }
+
+    #big_keyboard {
+        display: none;
+    }
+
+    .small_keyBoard {
+        display: block;
+    }
+
+    
+    .small_keyBoard button{
+        box-shadow: none;
+    }
+    
+    .mobile_Button {
+        width: 8%;
+        margin: 1px 1px;
+        text-align: center;
+        border: none;
+        padding: 1%;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    
+        background-color: #b4b1b1;
+    
+    }
+    
+    .midLine {
+        margin-left: 9%;
+    }
+    
+    .longWidth_button {
+        width: 13%;
+    }
+    
+    .mobileSpace_Button {
+        width: 45%;
+    }
+
+}
+
+
+@media screen and (max-width: 416px) {
+    .whole_page {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .textare_section {
+        margin: 20px 0;
+    }
+
+    #text_area {
+        width: 88%;
+        height: 70px;
+    }
+
+    #big_keyboard {
+        display: none;
+    }
+
+    .small_keyBoard {
+        display: block;
+    }
+
+    .small_keyBoard button{
+        box-shadow: none;
+    }
+    
+    .mobile_Button {
+        /* width: 8%; */
+        width: 32px;
+        margin: 1px 1px;
+        text-align: center;
+        border: none;
+        padding: 1%;
+        border-radius: 5px;
+        margin-bottom: 3px;
+    
+        background-color: #b4b1b1;
+    
+    }
+    
+    .midLine {
+        margin-left: 5%;
+    }
+    
+    .longWidth_button {
+        width: 13%;
+    }
+    
+    .mobileSpace_Button {
+        width: 49%;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+    .whole_page {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .textare_section {
+        margin: 20px 0;
+    }
+
+    #text_area {
+        width: 88%;
+        height: 70px;
+    }
+
+    #big_keyboard {
+        display: none;
+    }
+
+    .small_keyBoard {
+        display: block;
+    }
+
     .small_keyBoard button{
         box-shadow: none;
     }
@@ -393,7 +546,7 @@ span{
 }
 
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 363px) {
     .whole_page {
         width: 340px;
         margin: 0px auto;
@@ -418,6 +571,10 @@ span{
     
     .small_keyBoard button{
         box-shadow: none;
+    }
+
+    .longWidth_button {
+        width: 13%;
     }
     
     .mobileSpace_Button {
